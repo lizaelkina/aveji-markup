@@ -1,0 +1,14 @@
+mixin menu(title, url)
+  li
+    a.header__link.link-hover(href=url)= title
+
+header.header
+  a(href='/')
+    img.header__logo(src='./img/logo/logo.svg' alt='Логотип')
+    nav.header__links
+      ul.header__menu
+        +menu('О нас', '#about')
+        +menu('Проекты', '#projects')
+        +menu('Материалы', '#')
+        +menu('Отзывы', '#reviews')
+      a.header__link(href="tel:79999999999") +7 999 999 99 99

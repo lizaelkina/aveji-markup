@@ -1,0 +1,18 @@
+.link-hover {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: $text;
+    transition: .3s;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
