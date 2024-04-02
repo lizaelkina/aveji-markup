@@ -1,7 +1,5 @@
 .intro {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  row-gap: 40px;
+  @include grid-layout;
 
   &__title {
     grid-column: span 11;

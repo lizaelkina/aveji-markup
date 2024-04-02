@@ -1,0 +1,46 @@
+.about {
+  @include grid-layout;
+
+  &__title {
+    grid-column: span 8;
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%;
+    color: $text-color;
+  }
+
+  &__info {
+    margin-top: 16px;
+    grid-column: 11 / 17;
+    display: grid;
+    row-gap: 16px;
+  }
+
+  &__numbers {
+    grid-column: 11 / 14;
+    grid-row: 2;
+    display: grid;
+    row-gap: 24px;
+    list-style-type: none;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $text-color;
+  }
+
+  &__number {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: normal;
+    color: $text-color;
+  }
+}
