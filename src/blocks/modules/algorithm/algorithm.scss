@@ -1,0 +1,57 @@
+.algorithm {
+  @include grid-layout;
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%;
+    color: $text-color;
+
+    &_big {
+      grid-column: span 8;
+      font-size: 48px;
+    }
+
+    &_small {
+      grid-column: 1 / 4;
+      font-size: 36px;
+    }
+  }
+
+  &__list {
+    grid-column: 11 / 21;
+    grid-row: 2;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $text-color;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $text-color;
+
+    &_subtitle {
+      grid-column: 11 / 16;
+      margin-top: 16px;
+    }
+
+    &_item {
+      grid-column: 4 / 7;
+    }
+  }
+}

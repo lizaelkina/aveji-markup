@@ -3,7 +3,7 @@
 
   &__title {
     grid-column: span 8;
-    font-family: $font-title;
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -18,7 +18,7 @@
     row-gap: 16px;
   }
 
-  &__numbers {
+  &__list {
     grid-column: 11 / 14;
     grid-row: 2;
     display: grid;
@@ -36,7 +36,7 @@
   }
 
   &__number {
-    font-family: $font-title;
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;

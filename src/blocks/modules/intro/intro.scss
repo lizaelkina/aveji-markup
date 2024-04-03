@@ -3,7 +3,7 @@
 
   &__title {
     grid-column: span 11;
-    font-family: $font-title;
+    font-family: $font-primary;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -24,7 +24,7 @@
   }
 
   &__order {
-    grid-column: 21 / 18;
+    grid-column: 18 / 21;
     align-self: end;
     justify-self: end;
   }
