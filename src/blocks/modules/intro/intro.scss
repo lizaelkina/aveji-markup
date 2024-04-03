@@ -3,23 +3,17 @@
 
   &__title {
     grid-column: span 11;
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
+    @include section-title;
     font-size: 72px;
     line-height: 120%;
-    color: $text-color;
     text-transform: uppercase;
   }
 
   &__subtitle {
     grid-row: 2;
     grid-column: span 6;
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
+    @include section-text;
     font-size: 20px;
-    line-height: 140%;
     color: $text-color;
   }
 

@@ -3,12 +3,7 @@
 
   &__title {
     grid-column: span 8;
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 140%;
-    color: $text-color;
+    @include section-title;
   }
 
   &__info {
@@ -27,20 +22,10 @@
   }
 
   &__text {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: $text-color;
+    @include section-text;
   }
 
   &__number {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: normal;
-    color: $text-color;
+    @include list-title;
   }
 }

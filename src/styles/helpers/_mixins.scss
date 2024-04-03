@@ -3,3 +3,31 @@
   grid-template-columns: repeat(20, 1fr);
   row-gap: 40px;
 }
+
+//fonts
+@mixin section-title {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 140%;
+  color: $text-color;
+}
+
+@mixin section-text {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $text-color;
+}
+
+@mixin list-title {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  color: $text-color;
+}

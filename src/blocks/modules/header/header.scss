@@ -24,12 +24,7 @@
   }
 
   &__link {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: normal;
-    color: $text-color;
+    @include section-text;
     text-decoration: none;
   }
 }

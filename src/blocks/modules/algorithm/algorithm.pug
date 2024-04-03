@@ -1,11 +1,11 @@
 mixin item(title, subtitle)
   li.algorithm__item
-    h3.algorithm__title.algorithm__title_small= title
-    p.algorithm__text.algorithm__text_item= subtitle
+    h3.algorithm__item-title= title
+    p.algorithm__item-text= subtitle
 
 section#algorithm.algorithm
-  h2.algorithm__title.algorithm__title_big Как мы работаем
-  p.algorithm__text.algorithm__text_subtitle Алгоритм работы с нами для удобства и&nbsp;понимания проекта
+  h2.algorithm__title Как мы работаем
+  p.algorithm__subtitle Алгоритм работы с нами для удобства и&nbsp;понимания проекта
   ul.algorithm__list
     +item('Идея', 'Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по материалам.')
     +item('Техническое задание', 'Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации проекта и другие обязательные пункты.')

@@ -2,22 +2,14 @@
   @include grid-layout;
 
   &__title {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 140%;
-    color: $text-color;
+    @include section-title;
+    grid-column: span 8;
+  }
 
-    &_big {
-      grid-column: span 8;
-      font-size: 48px;
-    }
-
-    &_small {
-      grid-column: 1 / 4;
-      font-size: 36px;
-    }
+  &__subtitle {
+    @include section-text;
+    grid-column: 11 / 16;
+    margin-top: 16px;
   }
 
   &__list {
@@ -37,21 +29,14 @@
     border-bottom: 1px solid $text-color;
   }
 
-  &__text {
-    font-family: $font-primary;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: $text-color;
+  &__item-title {
+    @include list-title;
+    grid-column: 1 / 4;
+  }
 
-    &_subtitle {
-      grid-column: 11 / 16;
-      margin-top: 16px;
-    }
 
-    &_item {
-      grid-column: 4 / 7;
-    }
+  &__item-text {
+    @include section-text;
+    grid-column: 4 / 7;
   }
 }
