@@ -1,0 +1,15 @@
+mixin photo(href, src, alt)
+  li
+    a(href=href).projects__item
+      img.projects__photo(src=src alt=alt)
+      //p.projects__text= alt
+
+section#projects.projects
+  h2.projects__title Проекты
+  ul.projects__list
+    +photo('#', './img/img-collage1.png', 'Тумба под телевизор')
+    +photo('#','./img/img-collage2.png', 'Встроенная кухня')
+    +photo('#','./img/img-collage3.png', 'Стеллаж для книг')
+    +photo('#','./img/img-collage4.png', 'Тумбы для прихожей')
+    +photo('#','./img/img-collage5.png', 'Кровать')
+    +photo('#','./img/img-collage6.png', 'Комод')
