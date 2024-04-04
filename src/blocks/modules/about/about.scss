@@ -4,10 +4,10 @@
   &__title {
     grid-column: span 8;
     @include section-title;
+    line-height: 140%;
   }
 
   &__info {
-    margin-top: 16px;
     grid-column: 11 / 17;
     display: grid;
     row-gap: 16px;
