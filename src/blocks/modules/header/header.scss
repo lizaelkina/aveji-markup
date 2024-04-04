@@ -24,6 +24,7 @@
   }
 
   &__link {
+    padding-bottom: 2px;
     @include section-text;
     text-decoration: none;
   }

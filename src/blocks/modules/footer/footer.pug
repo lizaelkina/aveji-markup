@@ -1,0 +1,15 @@
+mixin item(title, href, extraClass)
+  li
+    a(class!=extraClass).link-hover(href=href)= title
+
+footer.footer
+  div.footer__copyright
+    p &copy; 2023 Aveji
+    p Все права защищены
+  ul.footer__policy
+    +item('Политика конфеденциальности', '#', 'footer__link')
+    span /
+    +item('Оплата и доставка', '#', 'footer__link')
+  ul.footer__social
+    +item('Вконтакте', '#', 'footer__link')
+    +item('Телеграм', '#', 'footer__link')
