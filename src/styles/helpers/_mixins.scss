@@ -5,6 +5,13 @@
   row-gap: 40px;
 }
 
+@mixin masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+}
+
 //fonts
 @mixin section-title {
   font-family: $font-primary;

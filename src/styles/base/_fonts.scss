@@ -17,23 +17,3 @@
   url("/fonts/Roboto-Medium.woff2") format('woff2'),
   url("/fonts/Roboto-Medium.woff") format('woff');
 }
-
-@font-face {
-  font-family: 'Helvetica';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Helvetica'),
-  url("/fonts/Helvetica") format("woff2"),
-  url("/fonts/Helvetica") format("woff");
-}
-
-@font-face {
-  font-family: 'Helvetica-Bold';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Helvetica'),
-  url("/fonts/Helvetica-Bold") format("woff2"),
-  url("/fonts/Helvetica-Bold") format("woff");
-}
