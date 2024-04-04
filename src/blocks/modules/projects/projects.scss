@@ -17,23 +17,52 @@
 
   &__item {
     text-decoration: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 8%;
+      width: 100%;
+      background-color: $text-color;
+      opacity: 0;
+      transition: opacity .6s ease;
+    }
+
+    &:hover:before {
+      opacity: .5;
+    }
+
+    &:hover .projects__caption {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s linear 0s, opacity 300ms;
+    }
   }
 
   &__photo {
-    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 89 / 116;
     object-fit: cover;
   }
 
-  //&__text {
-  //  width: 445px;
-  //  box-sizing: border-box;
-  //  padding: 22px 20px;
-  //  background: $text-color;
-  //  opacity: .5;
-  //  @include section-text;
-  //  color: $white;
-  //}
+  &__caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    @include section-text;
+    color: $white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
 }
