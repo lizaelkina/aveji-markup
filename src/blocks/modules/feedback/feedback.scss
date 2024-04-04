@@ -1,0 +1,35 @@
+.feedback {
+  @include grid-layout;
+
+  &__img {
+    grid-column: span 8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__wrap {
+    grid-column: 11 / 20;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__subtitle {
+    @include section-text;
+    margin-bottom: 15px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__icon {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,11 @@
+form.form(name='feedback', novalidate)
+  div.form__group
+    label.form__label Имя
+    input.form__input(type='text' name='name' autocomplete='off' required)
+  div.form__group
+    label.form__label Email
+    input.form__input(type='email' name='email' autocomplete='off' required)
+  div.form__group
+    label.form__label Телефон
+    input.form__input(type='number' name='phone' autocomplete='off' required)
+  button.form__btn.btn__primary(type=submit) Отправить заявку
