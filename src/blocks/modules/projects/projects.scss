@@ -19,22 +19,6 @@
     text-decoration: none;
     position: relative;
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 8%;
-      width: 100%;
-      background-color: $text-color;
-      opacity: 0;
-      transition: opacity .6s ease;
-    }
-
-    &:hover:before {
-      opacity: .5;
-    }
-
     &:hover .projects__caption {
       visibility: visible;
       opacity: 1;
@@ -42,11 +26,20 @@
     }
   }
 
+  &__photo-wrap {
+    overflow: hidden;
+  }
+
   &__photo {
     display: block;
     width: 100%;
     aspect-ratio: 89 / 116;
     object-fit: cover;
+    transition: transform .5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__caption {
@@ -54,11 +47,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
+    background-color: $overlay;
     @include section-text;
     color: $white;
     visibility: hidden;

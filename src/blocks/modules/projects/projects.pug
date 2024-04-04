@@ -1,7 +1,8 @@
 mixin photo(href, src, alt)
   li
     a(href=href).projects__item
-      img.projects__photo(src=src alt=alt)
+      div.projects__photo-wrap
+        img.projects__photo(src=src alt=alt)
       div.projects__caption
         p= alt
         include ../../../img/icon/arrow.svg
