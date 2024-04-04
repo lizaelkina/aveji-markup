@@ -1,0 +1,15 @@
+.btn__primary {
+  @include section-text;
+  color: $white;
+  background-color: $text-color;
+  box-sizing: border-box;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color;
+    background-color: $beige;
+    transition: .3s;
+  }
+}
