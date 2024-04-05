@@ -1,15 +1,15 @@
-mixin item(title, href, extraClass)
+mixin item(title, href)
   li
-    a(class!=extraClass).link-hover(href=href)= title
+    a.footer__link.link-hover(href=href)= title
 
 footer.footer
   div.footer__copyright
     p &copy; 2023 Aveji
     p Все права защищены
   ul.footer__policy
-    +item('Политика конфеденциальности', '#', 'footer__link')
+    +item('Политика конфеденциальности', '#')
     span /
-    +item('Оплата и доставка', '#', 'footer__link')
+    +item('Оплата и доставка', '#')
   ul.footer__social
-    +item('Вконтакте', '#', 'footer__link')
-    +item('Телеграм', '#', 'footer__link')
+    +item('Вконтакте', '#')
+    +item('Телеграм', '#')
