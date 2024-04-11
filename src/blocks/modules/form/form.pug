@@ -1,11 +1,27 @@
-form.form(name='feedback', novalidate)
+form.form(name='feedback')
   div.form__group
-    label.form__label Имя
-    input.form__input(type='text' name='name' autocomplete='off' required)
+    input#name.form__input(required
+      minlength='3'
+      type='text'
+      name='name'
+      autocomplete='off'
+      placeholder="")
+    label.form__label(for='name') Имя
   div.form__group
-    label.form__label Email
-    input.form__input(type='email' name='email' autocomplete='off' required)
+    input#email.form__input(required
+      type='email'
+      name='email'
+      autocomplete='off'
+      placeholder="")
+    label.form__label(for='email') Email
   div.form__group
-    label.form__label Телефон
-    input.form__input(type='number' name='phone' autocomplete='off' required)
+    input#phone.form__input(required
+      pattern='^((\\+7|7|8)+([0-9]){10})$'
+      minlength='6'
+      title='В этом поле должны быть только цифры. Минимальная длина - 6 символов.'
+      type='tel'
+      name='phone'
+      autocomplete='off'
+      placeholder="")
+    label.form__label(for='phone') Телефон
   button.form__btn.btn__primary(type=submit) Отправить заявку
