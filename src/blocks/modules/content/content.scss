@@ -4,3 +4,21 @@
   flex-direction: column;
   gap: 120px;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 0 16px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    margin: 0 8px 0;
+  }
+}
