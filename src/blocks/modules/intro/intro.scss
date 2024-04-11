@@ -1,7 +1,6 @@
 .intro {
   @include grid-layout;
   width: 100%;
-  margin-bottom: 100px;
 
   &__title {
     grid-column: span 11;
