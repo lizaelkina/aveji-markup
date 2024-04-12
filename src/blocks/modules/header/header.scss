@@ -51,33 +51,33 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .header {
     align-items: center;
-  }
 
-  .header__nav {
-    display: none;
-  }
+    &__nav {
+      display: none;
+    }
 
-  .header__btn {
-    display: block;
+    &__btn {
+      display: block;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     margin-left: 16px;
     margin-right: 16px;
     padding: 8px 0 20px;
-  }
 
-  .header__logo {
-    width: 26px;
+    &__logo {
+      width: 26px;
+    }
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .header {
     margin-left: 8px;
     margin-right: 8px;
