@@ -33,3 +33,23 @@
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .feedback__img {
+    display: none;
+  }
+
+  .feedback__wrap {
+    grid-column: span 21;
+    gap: 20px;
+  }
+
+  .feedback__title {
+    @include clamp-title;
+  }
+
+  .feedback__icons {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
