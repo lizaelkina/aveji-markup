@@ -2,12 +2,13 @@ mixin paragraf(text)
   p.about__text= text
 
 mixin item(number, text)
-  li
+  li.about__item
     p.about__number= number
     p.about__text= text
 
 section#about.about
   h2.about__title Более 5 лет создаем мебель для вашего комфорта
+  h2.about__title.about__title_mobile О компании
   div.about__info
     +paragraf('Мы — команда профессионалов, которые могут произвести любую мебель для вашего проекта, а также найти производственное решение любой задумки.')
     +paragraf('Наша основная цель — реализовывать самые смелые задумки, и делать это качественно и аккуратно.')

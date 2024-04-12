@@ -51,6 +51,10 @@
       align-self: start;
     }
 
+    &__img_big {
+      max-height: 700px;
+    }
+
     &__img_small {
       display: none;
     }
@@ -67,10 +71,10 @@
 @media screen and (max-width: 768px) {
   .intro__subtitle {
     font-size: clamp(16px, 3vw, 18px);
+  }
 
-    &__img_big {
-      max-height: 400px;
-    }
+  .intro__img_big {
+    max-height: 400px;
   }
 }
 
