@@ -8,7 +8,7 @@
   }
 
   &__list {
-    @include masonry(304px); //445px
+    @include masonry(445px);
   }
 
   &__item {
@@ -65,5 +65,11 @@
     &__title {
       @include clamp-title;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects__list {
+    @include masonry(304px);
   }
 }
