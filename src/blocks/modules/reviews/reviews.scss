@@ -8,7 +8,7 @@
   }
 
   &__list {
-    @include masonry;
+    @include masonry(304px);
   }
 
   &__item {
@@ -32,5 +32,15 @@
   &__item-text {
     @include section-text;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews {
+    gap: 20px;
+
+    &__title {
+      @include clamp-title;
+    }
   }
 }

@@ -5,9 +5,9 @@
   row-gap: 40px;
 }
 
-@mixin masonry {
+@mixin masonry($minmax) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($minmax, 1fr));
   gap: 20px;
   list-style-type: none;
 }
@@ -38,4 +38,9 @@
   font-size: 36px;
   line-height: 140%;
   color: $text-color;
+}
+
+//media queries
+@mixin clamp-title {
+  font-size: clamp(28px, 4vw, 48px);
 }
