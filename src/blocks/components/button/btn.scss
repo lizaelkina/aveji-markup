@@ -1,0 +1,64 @@
+.btn {
+  @include section-text;
+  box-sizing: border-box;
+  transition: .3s;
+
+  &_primary {
+    color: $white;
+    border: none;
+    background-color: $text-color;
+    padding: 12px 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-color;
+      background-color: $beige;
+    }
+  }
+
+  &_secondary {
+    padding-bottom: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: $text-color;
+      transition: .3s;
+    }
+
+    &:hover:after {
+      width: 0;
+    }
+
+    &:hover {
+      color: $beige;
+    }
+  }
+
+  &_menu {
+    display: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: $text-color;
+    mask-image: url(../../../img/icon/burger.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform .5s;
+
+    &:hover {
+      background-color: $beige;
+      transform: scale(1.3);
+    }
+  }
+}
