@@ -39,10 +39,14 @@
     &__nav {
       display: none;
     }
-  }
 
-  .btn_menu {
-    display: block;
+    &__burger {
+      display: block;
+      position: fixed;
+      top: 12px;
+      right: 32px;
+      z-index: 1;
+    }
   }
 }
 
@@ -55,6 +59,11 @@
     &__logo {
       width: 26px;
     }
+
+    &__burger {
+      top: 8px;
+      right: 16px;
+    }
   }
 }
 
@@ -62,5 +71,9 @@
   .header {
     margin-left: 8px;
     margin-right: 8px;
+
+    &__burger {
+      right: 8px;
+    }
   }
 }
