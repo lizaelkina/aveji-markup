@@ -5,7 +5,7 @@
         "type": "git",
         "url": "https://github.com/lizaelkina/aveji-markup"
     },
-    "homepage": "http://aveji-markup.elkacloud.ru/",
+    "homepage": "https://github.com/lizaelkina/aveji-markup",
     "license": "GPL-3.0-only",
     "scripts": {
         "dev": "gulp",

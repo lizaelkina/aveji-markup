@@ -14,4 +14,4 @@
 
 ## Ссылка на проект
 
-[//]: # (- http://aveji-markup.elkacloud.ru)
+- https://lizaelkina.github.io/aveji-markup/
