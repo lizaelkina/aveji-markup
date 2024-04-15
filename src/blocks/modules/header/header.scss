@@ -27,6 +27,10 @@
     @include section-text;
     text-decoration: none;
   }
+
+  &__burger {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {

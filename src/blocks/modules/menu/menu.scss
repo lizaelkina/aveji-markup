@@ -1,5 +1,6 @@
 .menu {
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 0;
   width: 100%;
@@ -19,16 +20,19 @@
 
   &__content {
     box-sizing: border-box;
-    padding: 40px 16px 40px;
+    padding: 16px 16px;
     display: flex;
     flex-direction: column;
     gap: 50px;
   }
 
+  &__heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__logo {
-    position: fixed;
-    top: 15px;
-    left: 16px;
     width: 26px;
   }
 

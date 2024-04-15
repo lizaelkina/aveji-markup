@@ -2,11 +2,13 @@ mixin list(title, url, extraClass)
   li
     a.menu__link.link-hover(class!=extraClass)(href=url)= title
 
-div.menu
+div.menu.menu_opened
   div.overlay
   div.menu__container
     div.menu__content
-      +logo('menu__logo')
+      div.menu__heder
+        +logo('menu__logo')
+        button.btn.btn_menu.btn_menu_close(type='button' aria-label='Закрыть меню' aria-expanded='true')
       ul.menu__list
         +list('О нас', '#about')
         +list('Проекты', '#projects')
