@@ -7,7 +7,7 @@
   height: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: visibility .4s, opacity .4s linear;
+  transition: visibility .3s, opacity .3s linear;
 
   &__container {
     margin-left: auto;
@@ -15,7 +15,6 @@
     min-width: 40%;
     height: 100%;
     background-color: $menu;
-    transform: translateX(100%);
   }
 
   &__content {
@@ -58,8 +57,4 @@
 .menu_opened {
   visibility: visible;
   opacity: 1;
-}
-
-.menu.menu_opened .menu__container {
-  transform: translateX(0%);
 }

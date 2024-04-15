@@ -1,13 +1,16 @@
-modules.define('burger-menu', ['i-bem-dom'], function(provide, bemDom) {
+const page = document.querySelector(".page");
+const menu = page.querySelector(".menu");
+const buttonOpenMenu = page.querySelector(".header__burger");
+const buttonCloseMenu = page.querySelector(".btn_menu_close");
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
+function openMenu() {
+    menu.classList.add("menu_opened");
+}
 
-});
+function closeMenu() {
+    menu.classList.remove("menu_opened");
+}
+
+buttonOpenMenu.addEventListener("click", openMenu);
+
+buttonCloseMenu.addEventListener("click", closeMenu);
