@@ -18,12 +18,16 @@
     background-color: transparent;
     outline-color: transparent;
 
-    &:focus {
+    &:invalid {
+      border-bottom: 1px solid $red;
+    }
+
+    &:invalid:placeholder-shown {
       border-bottom: 1px solid $beige;
     }
 
-    &:focus ~ .form__label,  /* фокус на input */
-    &:not(:placeholder-shown) ~ .form__label  /* в input есть значение */  {
+    &:focus ~ .form__label, /* фокус на input */
+    &:not(:placeholder-shown) ~ .form__label /* в input есть значение */ {
       font-size: 13px;
       top: -13px;
     }
