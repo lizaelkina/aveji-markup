@@ -27,11 +27,12 @@ html(lang="ru")
     link(rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png")
     link(rel="stylesheet" href="styles/main.css")
   body.custom-scroll
-    .page
+    div.page
       include ../../blocks/modules/header/header
       main.content
         block content
       include ../../blocks/modules/footer/footer
+      include ../../blocks/modules/menu/menu
   script(src="js/vendor.js")
   script(src="js/main.js")
   block scripts

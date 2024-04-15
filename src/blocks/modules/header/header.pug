@@ -1,10 +1,11 @@
+include ../../../views/helpers/mixins
+
 mixin menu(title, url)
   li
     a.header__link.link-hover(href=url)= title
 
 header.header
-  a(href='/')
-    img.header__logo(src='./img/logo/logo.svg' alt='Логотип')
+  +logo('header__logo')
   nav.header__nav
     ul.header__menu
       +menu('О нас', '#about')

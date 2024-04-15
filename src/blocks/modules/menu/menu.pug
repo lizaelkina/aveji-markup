@@ -1,0 +1,18 @@
+mixin list(title, url, extraClass)
+  li
+    a.menu__link.link-hover(class!=extraClass)(href=url)= title
+
+div.menu
+  div.overlay
+  div.menu__container
+    div.menu__content
+      +logo('menu__logo')
+      ul.menu__list
+        +list('О нас', '#about')
+        +list('Проекты', '#projects')
+        +list('Материалы', '#')
+        +list('Отзывы', '#reviews')
+      a.menu__link(href='tel:79999999999') +7 999 999 99 99
+      ul.menu__list
+        +list('Вконтакте', '#', 'menu__link_social')
+        +list('Телеграм', '#', 'menu__link_social')

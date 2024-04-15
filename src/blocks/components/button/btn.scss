@@ -61,5 +61,14 @@
       background-image: url(../../../img/icon/burger-active.svg);
       transform: scale(1.3);
     }
+
+    &_close {
+      background-image: url(../../../img/icon/close.svg);
+
+      &:hover {
+        background-image: url(../../../img/icon/close-active.svg);
+        transform: scale(1.3);
+      }
+    }
   }
 }
