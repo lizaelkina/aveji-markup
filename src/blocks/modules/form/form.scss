@@ -13,7 +13,9 @@
     box-sizing: border-box;
     padding: 5px 2px 12px;
     border: none;
+    border-radius: 0;
     border-bottom: 1px solid $text-color;
+    background-color: transparent;
     outline-color: transparent;
 
     &:focus {
@@ -24,10 +26,6 @@
     &:not(:placeholder-shown) ~ .form__label  /* в input есть значение */  {
       font-size: 13px;
       top: -13px;
-    }
-
-    &:invalid:not(:placeholder-shown) /* в input невалидное значение */ {
-      border-bottom: 1px solid $red;
     }
   }
 
