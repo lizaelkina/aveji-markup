@@ -2,6 +2,7 @@
   @include section-text;
   box-sizing: border-box;
   transition: .3s;
+  outline-color: transparent;
 
   &_primary {
     color: $white;
