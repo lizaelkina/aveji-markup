@@ -2,7 +2,8 @@ const page = document.querySelector(".page");
 const menu = page.querySelector(".menu");
 const clickForOverlay = page.querySelector(".overlay");
 const buttonOpenMenu = page.querySelector(".header__burger");
-const buttonCloseMenu = page.querySelector(".btn_menu_close");
+const buttonCloseMenu = menu.querySelector(".btn_menu_close");
+const anchorMenu = menu.querySelectorAll(".menu__link");
 
 function openMenu() {
     menu.classList.add("menu_opened");
@@ -26,3 +27,7 @@ buttonOpenMenu.addEventListener("click", openMenu);
 buttonCloseMenu.addEventListener("click", closeMenu);
 
 clickForOverlay.addEventListener("click", closeMenu);
+
+anchorMenu.forEach(link => {
+    link.addEventListener("click", () => closeMenu());
+});

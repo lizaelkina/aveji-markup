@@ -1,6 +1,10 @@
-mixin list(title, url, extraClass)
+mixin anchor(title, url)
   li
-    a.menu__link.link-hover(class!=extraClass)(href=url)= title
+    a.menu__link.link-hover(href=url)= title
+
+mixin link(title, url, extraClass)
+  li
+    a.menu__link.menu__link_social.link-hover(href=url target='_blank')= title
 
 div.menu
   div.overlay
@@ -10,11 +14,11 @@ div.menu
         +logo('menu__logo')
         button.btn.btn_menu.btn_menu_close(type='button' aria-label='Закрыть меню' aria-expanded='true')
       ul.menu__list
-        +list('О нас', '#about')
-        +list('Проекты', '#projects')
-        +list('Материалы', '#')
-        +list('Отзывы', '#reviews')
+        +anchor('О нас', '#about')
+        +anchor('Проекты', '#projects')
+        +anchor('Материалы', '#')
+        +anchor('Отзывы', '#reviews')
       a.menu__link(href='tel:79999999999') +7 999 999 99 99
       ul.menu__list
-        +list('Вконтакте', '#', 'menu__link_social')
-        +list('Телеграм', '#', 'menu__link_social')
+        +link('Вконтакте', 'https://vk.com/')
+        +link('Телеграм', 'https://web.telegram.org/k/')
