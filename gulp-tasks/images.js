@@ -1,6 +1,6 @@
 "use strict";
 
-import { paths } from "../gulpfile.babel";
+import {paths} from "../gulpfile.babel";
 import gulp from "gulp";
 import gulpif from "gulp-if";
 import imagemin from "gulp-imagemin";
@@ -18,7 +18,7 @@ const argv = yargs.argv,
 
 gulp.task("images", () => {
     return gulp.src(paths.images.src)
-        .pipe(newer(paths.images.dist))  
+        .pipe(newer(paths.images.dist))
         .pipe(gulpif(production, imagemin([
             imageminGiflossy({
                 optimizationLevel: 3,
@@ -38,14 +38,14 @@ gulp.task("images", () => {
             }),
             imagemin.svgo({
                 plugins: [
-                    { removeViewBox: false },
-                    { removeUnusedNS: false },
-                    { removeUselessStrokeAndFill: false },
-                    { cleanupIDs: false },
-                    { removeComments: true },
-                    { removeEmptyAttrs: true },
-                    { removeEmptyText: true },
-                    { collapseGroups: true }
+                    {removeViewBox: false},
+                    {removeUnusedNS: false},
+                    {removeUselessStrokeAndFill: false},
+                    {cleanupIDs: false},
+                    {removeComments: true},
+                    {removeEmptyAttrs: true},
+                    {removeEmptyText: true},
+                    {collapseGroups: true}
                 ]
             })
         ])))
