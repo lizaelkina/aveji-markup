@@ -18,11 +18,7 @@
     background-color: transparent;
     outline-color: transparent;
 
-    &:invalid {
-      border-bottom: 1px solid $red;
-    }
-
-    &:invalid:placeholder-shown {
+    &:focus {
       border-bottom: 1px solid $beige;
     }
 
@@ -30,6 +26,10 @@
     &:not(:placeholder-shown) ~ .form__label /* в input есть значение */ {
       font-size: 13px;
       top: -13px;
+    }
+
+    &_invalid {
+      border-bottom: 1px solid $red;
     }
   }
 
