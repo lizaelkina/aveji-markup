@@ -10,6 +10,7 @@
 
 - PUG
 - SCSS
+- JavaScript
 - GULP
 
 ## Ссылка на проект
