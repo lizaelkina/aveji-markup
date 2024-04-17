@@ -30,6 +30,8 @@
   }
 
   &__icon {
+    max-width: 121px;
+    max-height: 36px;
     text-decoration: none;
   }
 }
@@ -53,3 +55,11 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .feedback__icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
