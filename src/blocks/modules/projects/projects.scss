@@ -65,11 +65,19 @@
     &__title {
       @include clamp-title;
     }
+
+    &__list {
+      display: none;
+    }
+
+    &__photo:hover {
+      transform: none;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .projects__list {
-    @include masonry(304px);
-  }
-}
+//@media screen and (max-width: 768px) {
+//  .projects__list {
+//    @include masonry(304px);
+//  }
+//}

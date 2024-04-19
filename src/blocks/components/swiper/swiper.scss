@@ -15,6 +15,11 @@
   background: $orange;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: $orange;
+}
+
 @media screen and (max-width: 1024px) {
   .swiper {
     display: flex;

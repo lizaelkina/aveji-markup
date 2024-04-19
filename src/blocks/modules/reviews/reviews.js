@@ -7,11 +7,11 @@ const swiper = new Swiper('.reviews__swiper',
     longSwipes: false,
 
     breakpoints: {
-      600: {
-        slidesPerView: 1.5,
-      },
       850: {
         slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 1.5,
       },
     },
 
