@@ -15,7 +15,6 @@
     width: 100%;
     height: 100%;
     display: flex;
-    text-decoration: none;
     position: relative;
 
     &:hover .projects__caption {
@@ -54,6 +53,7 @@
     background-color: $overlay;
     @include section-text;
     color: $white;
+    text-decoration: none;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
@@ -76,10 +76,6 @@
       visibility: visible;
       opacity: 1;
       transition: none;
-    }
-
-    &__photo:hover {
-      transform: none;
     }
   }
 }
