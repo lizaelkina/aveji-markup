@@ -20,6 +20,7 @@ webpackConfig.devtool = production ? false : 'source-map';
 gulp.task('scripts', () => {
   return gulp.src(paths.scripts.src)
     .pipe(webpackStream(webpackConfig), webpack)
+    //файлы
     .pipe(gulpif(production, rename({
       suffix: '.min'
     })))

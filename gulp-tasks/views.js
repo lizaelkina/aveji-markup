@@ -16,8 +16,9 @@ gulp.task('views', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulpif(production, replace('.css', '.min.css')))
-    .pipe(gulpif(production, replace('.js', '.min.js')))
+    //ссылки
+    .pipe(gulpif(production, replace( /(['"](?!http)[^'"]*)(\.css)/gm, '$1.min.css')))
+    .pipe(gulpif(production, replace( /(['"](?!http)[^'"]*)(\.js)/gm, '$1.min.js')))
     .pipe(gulp.dest(paths.views.dist))
     .pipe(browsersync.stream());
 });

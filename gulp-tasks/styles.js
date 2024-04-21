@@ -46,6 +46,7 @@ gulp.task('styles', () => {
         }
       }
     })))
+    //файлы
     .pipe(gulpif(production, rename({
       suffix: '.min'
     })))
