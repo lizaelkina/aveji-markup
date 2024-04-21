@@ -25,16 +25,19 @@
   }
 
   &__img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 
     &_big {
+      aspect-ratio: 678 / 809;
       grid-row: 2 / 4;
       grid-column: 11 / 21;
     }
 
     &_small {
+      aspect-ratio: 329 / 423;
       grid-row: 3;
       grid-column: span 5;
     }
