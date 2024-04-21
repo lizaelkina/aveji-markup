@@ -3,9 +3,12 @@
   "author": "Liza Elkina",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lizaelkina/aveji-markup"
+    "url": "git+https://github.com/lizaelkina/aveji-markup.git"
   },
-  "homepage": "https://github.com/lizaelkina/aveji-markup",
+  "homepage": "https://github.com/lizaelkina/aveji-markup#readme",
+  "bugs": {
+    "url": "https://github.com/lizaelkina/aveji-markup/issues"
+  },
   "license": "GPL-3.0-only",
   "scripts": {
     "dev": "gulp",
