@@ -271,16 +271,16 @@
             <p class="feedback__subtitle">Оставьте заявку, и мы вам перезвоним</p>
             <form class="form" name="feedback" novalidate>
               <div class="form__group">
-                <input class="form__input" id="name" required minlength="3" type="text" name="name" autocomplete="off" placeholder="">
-                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" id="name-input" required minlength="3" type="text" name="name" autocomplete="off" placeholder="">
+                <label class="form__label" for="name-input">Имя</label><span class="form__input-error name-input-error">Минимум 3 символа</span>
               </div>
               <div class="form__group">
-                <input class="form__input" id="email" required type="email" name="email" autocomplete="off" placeholder="">
-                <label class="form__label" for="email">Email</label>
+                <input class="form__input" id="email-input" required type="email" name="email" autocomplete="off" placeholder="">
+                <label class="form__label" for="email-input">Email</label><span class="form__input-error email-input-error">Формат: name@mail.ru</span>
               </div>
               <div class="form__group">
-                <input class="form__input" id="phone" required pattern="^((\+7|7|8)+([0-9]){10})$" minlength="6" title="В этом поле должны быть только цифры. Минимальная длина - 6 символов." type="tel" name="phone" autocomplete="off" placeholder="">
-                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" id="phone-input" required pattern="^((\+7|7|8)+([0-9]){10})$" minlength="11" type="tel" name="phone" autocomplete="off" placeholder="">
+                <label class="form__label" for="phone-input">Phone</label><span class="form__input-error phone-input-error">Только цифры, 11 символов</span>
               </div>
               <button class="btn btn_primary form__btn">Отправить заявку</button>
             </form>
