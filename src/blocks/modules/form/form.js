@@ -1,26 +1,60 @@
-const formElement = document.querySelector('.form');
-const formInput = formElement.querySelector('.form__input');
+const form = document.querySelector('.form');
 
-// Функция, которая добавляет класс с ошибкой
-const showInputError = (element) => {
-  element.classList.add('form__input_error');
-};
+function showInputError(inputElement, errorElement) {
+  inputElement.classList.add('form__input_type_error');
+  errorElement.classList.add('form__input-error_active');
+}
 
-// Функция, которая удаляет класс с ошибкой
-const hideInputError = (element) => {
-  element.classList.remove('form__input_error');
-};
+function hideInputError(inputElement, errorElement) {
+  inputElement.classList.remove('form__input_type_error');
+  errorElement.classList.remove('form__input-error_active');
+}
 
-// Функция, которая проверяет валидность поля
-const isValid = () => {
-  if (!formInput.validity.valid) {
-    // Если поле не проходит валидацию, покажем ошибку
-    showInputError(formInput);
+function toggleBtnState (buttonElement, isActive) {
+  if (isActive) {
+    buttonElement.disabled = false;
+    buttonElement.classList.remove('form__btn_disabled');
   } else {
-    // Если проходит, скроем
-    hideInputError(formInput);
+    buttonElement.disabled = 'disabled';
+    buttonElement.classList.add('form__btn_disabled');
   }
-};
+}
 
-// Вызовем функцию isValid на каждый ввод символа
-formInput.addEventListener('input', isValid);
+function checkInputValidity(formElement, inputElement) {
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+  const isInputValid = inputElement.validity.valid;
+
+  if (isInputValid) {
+    hideInputError(inputElement, errorElement);
+  } else {
+    showInputError(inputElement, errorElement);
+  }
+}
+
+function setEventListeners(formElement) {
+  const inputList = Array.from(formElement.querySelectorAll('.form__input'));
+  const buttonElement = formElement.querySelector('.form__btn');
+  toggleBtnState(buttonElement, false);
+
+  inputList.forEach((inputElement) => {
+    inputElement.addEventListener('input', () => {
+      checkInputValidity(formElement, inputElement);
+      toggleBtnState(buttonElement, formElement.checkValidity());
+    });
+  });
+}
+
+function enableValidation() {
+  const formList = Array.from(document.querySelectorAll('.form'));
+  formList.forEach((formElement) => setEventListeners(formElement));
+}
+
+enableValidation();
+
+function sendRequest(event, formElement) {
+  event.preventDefault();
+  form.reset();
+  alert('Заявка успешно отправлена!')
+}
+
+form.addEventListener('submit', sendRequest);

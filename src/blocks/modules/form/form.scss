@@ -4,6 +4,7 @@
   gap: 20px;
 
   &__group {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -18,17 +19,27 @@
     background-color: transparent;
     outline-color: transparent;
 
-    &:focus {
-      border-bottom: 1px solid $beige;
-    }
-
     &:focus ~ .form__label, /* фокус на input */
     &:not(:placeholder-shown) ~ .form__label /* в input есть значение */ {
       font-size: 13px;
       top: -13px;
     }
 
-    &_error {
+    &-error {
+      display: none;
+      @include section-text;
+      font-size: 13px;
+      color: $red;
+      position: absolute;
+      top: -13px;
+      right: 0;
+
+      &_active {
+        display: block;
+      }
+    }
+
+    &_type_error {
       border-bottom: 1px solid $red;
     }
   }
@@ -38,6 +49,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     display: block;
     transition: .3s;
   }
@@ -45,5 +57,9 @@
   &__btn {
     margin-top: 10px;
     max-width: 176px;
+
+    &_disabled {
+      pointer-events: none;
+    }
   }
 }
