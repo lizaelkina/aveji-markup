@@ -1,4 +1,8 @@
 const form = document.querySelector('.form');
+const buttonForm = form.querySelector('.form__btn')
+const feedback = document.querySelector('.feedback');
+const feedbackSubtitle = feedback.querySelector('.feedback__subtitle');
+const feedbackMessage = feedback.querySelector('.feedback__message');
 
 function showInputError(inputElement, errorElement) {
   inputElement.classList.add('form__input_type_error');
@@ -51,10 +55,20 @@ function enableValidation() {
 
 enableValidation();
 
+function reactToRequest() {
+  feedbackSubtitle.classList.add('feedback__subtitle_inactive');
+  feedbackMessage.classList.add('feedback__message_active');
+  buttonForm.classList.add('form__btn_disabled');
+  setTimeout(() => {
+    feedbackSubtitle.classList.remove('feedback__subtitle_inactive');
+    feedbackMessage.classList.remove('feedback__message_active');
+  }, 2000);
+}
+
 function sendRequest(event, formElement) {
   event.preventDefault();
   form.reset();
-  alert('Заявка успешно отправлена!')
+  reactToRequest();
 }
 
 form.addEventListener('submit', sendRequest);

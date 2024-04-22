@@ -22,7 +22,7 @@
     &:focus ~ .form__label, /* фокус на input */
     &:not(:placeholder-shown) ~ .form__label /* в input есть значение */ {
       font-size: 13px;
-      top: -13px;
+      top: -15px;
     }
 
     &-error {
@@ -31,8 +31,9 @@
       font-size: 13px;
       color: $red;
       position: absolute;
-      top: -13px;
+      top: -15px;
       right: 0;
+      bottom: 0;
 
       &_active {
         display: block;

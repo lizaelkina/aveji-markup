@@ -24,6 +24,21 @@
   &__subtitle {
     @include section-text;
     margin-bottom: 15px;
+
+    &_inactive {
+      display: none;
+    }
+  }
+
+  &__message {
+    display: none;
+    @include section-text;
+    color: $orange;
+    margin-bottom: 15px;
+
+    &_active {
+      display: block;
+    }
   }
 
   &__icons {
