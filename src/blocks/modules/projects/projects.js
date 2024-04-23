@@ -14,7 +14,10 @@ const swiper = new Swiper('.projects__swiper',
         slidesPerView: 2.2,
       },
       600: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.8,
+      },
+      450: {
+        slidesPerView: 1.3,
       },
     },
 
