@@ -1,11 +1,5 @@
 include ../../../views/helpers/mixins
 
-mixin review(title, text)
-  li.reviews__item&attributes(attributes)
-    +svg('quotes').reviews__svg
-    h4.reviews__item-title=title
-    p.reviews__item-text=text
-
 section#reviews.reviews
   h2.reviews__title Отзывы
   ul.reviews__list

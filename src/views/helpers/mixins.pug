@@ -5,3 +5,17 @@ mixin logo
 mixin svg(name)
   svg(data-svg=name)&attributes(attributes)
     use(xlink:href=`./img/sprites/sprite.svg#${name}`)
+
+mixin photo(src, href, alt)
+  li.card-photo&attributes(attributes)
+    div.card-photo__wrap
+      img.card-photo__img(src=src alt=alt)
+    a(href=href).card-photo__caption
+      p= alt
+      +svg('arrow').card-photo__svg
+
+mixin review(title, text)
+  li.card-review&attributes(attributes)
+    +svg('quotes').card-review__svg
+    h4.card-review__title=title
+    p.card-review__text=text
