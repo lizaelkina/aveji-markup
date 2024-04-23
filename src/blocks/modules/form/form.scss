@@ -15,12 +15,13 @@
     padding: 5px 2px 12px;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $main;
     background-color: transparent;
     outline-color: transparent;
 
     &:focus ~ .form__label, /* фокус на input */
-    &:not(:placeholder-shown) ~ .form__label /* в input есть значение */ {
+    &:not(:placeholder-shown) ~ .form__label /* в input есть значение */
+    {
       font-size: 13px;
       top: -15px;
     }
@@ -29,7 +30,7 @@
       display: none;
       @include section-text;
       font-size: 13px;
-      color: $red;
+      color: $error;
       position: absolute;
       top: -15px;
       right: 0;
@@ -41,7 +42,7 @@
     }
 
     &_type_error {
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid $error;
     }
   }
 
@@ -58,9 +59,5 @@
   &__btn {
     margin-top: 10px;
     max-width: 176px;
-
-    &_disabled {
-      pointer-events: none;
-    }
   }
 }

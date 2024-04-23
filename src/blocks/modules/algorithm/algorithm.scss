@@ -24,7 +24,7 @@
     grid-template-columns: repeat(6, 1fr);
     column-gap: 20px;
     padding-bottom: 24px;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $main;
   }
 
   &__item-title {

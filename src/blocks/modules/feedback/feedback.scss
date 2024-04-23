@@ -29,7 +29,7 @@
   &__message {
     display: none;
     @include section-text;
-    color: $orange;
+    color: $accent;
     margin-bottom: 15px;
 
     &_active {

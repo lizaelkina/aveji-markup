@@ -17,10 +17,8 @@ function hideInputError(inputElement, errorElement) {
 function toggleBtnState (buttonElement, isActive) {
   if (isActive) {
     buttonElement.disabled = false;
-    buttonElement.classList.remove('form__btn_disabled');
   } else {
     buttonElement.disabled = 'disabled';
-    buttonElement.classList.add('form__btn_disabled');
   }
 }
 
@@ -58,14 +56,14 @@ enableValidation();
 function reactToRequest() {
   feedbackSubtitle.classList.add('feedback__subtitle_inactive');
   feedbackMessage.classList.add('feedback__message_active');
-  buttonForm.classList.add('form__btn_disabled');
+  buttonForm.disabled = 'disabled';
   setTimeout(() => {
     feedbackSubtitle.classList.remove('feedback__subtitle_inactive');
     feedbackMessage.classList.remove('feedback__message_active');
   }, 2000);
 }
 
-function sendRequest(event, formElement) {
+function sendRequest(event) {
   event.preventDefault();
   form.reset();
   reactToRequest();
