@@ -1,412 +1,343 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Aveji</title>
-  <meta name="theme-color" content="#fff">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="styles/main.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</head>
-<body class="custom-scroll">
-<div class="page">
-  <header class="header"><a href="/"><img class="logo header__logo" src="./img/logo/logo.svg" alt="Логотип"></a>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a class="header__link link-hover" href="#about">О нас</a></li>
-        <li><a class="header__link link-hover" href="#projects">Проекты</a></li>
-        <li><a class="header__link link-hover" href="#">Материалы</a></li>
-        <li><a class="header__link link-hover" href="#reviews">Отзывы</a></li>
-      </ul>
-      <a class="header__link" href="tel:79999999999">+7 999 999 99 99</a>
-    </nav>
-    <button class="btn btn_menu header__burger" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
-  </header>
-  <main class="content">
-    <section class="intro" id="intro">
-      <h1 class="intro__title">Эксклюзивная и&nbsp;нестандартная мебель для дома</h1>
-      <p class="intro__subtitle">Мы можем произвести любую мебель для вашего проекта и найти производственное решение
-        любой задумки.</p><a class="btn btn_secondary intro__order" href="#feedback">Заказать проект</a><img
-        class="intro__img intro__img_big" src="./img/image1.png" alt="Наша мебель"><img
-        class="intro__img intro__img_small" src="./img/image2.png" alt="Наша мебель">
-    </section>
-    <section class="about" id="about">
-      <h2 class="about__title">Более 5 лет создаем мебель для вашего комфорта</h2>
-      <h2 class="about__title about__title_mobile">О компании</h2>
-      <div class="about__info">
-        <p class="about__text">Мы — команда профессионалов, которые могут произвести любую мебель для вашего проекта, а
-          также найти производственное решение любой задумки.</p>
-        <p class="about__text">Наша основная цель — реализовывать самые смелые задумки, и делать это качественно и
-          аккуратно.</p>
-        <p class="about__text">В качестве материалов мы используем натуральные — стекло, дерево, бетон, камень, металл и
-          эпоксидную смолу.</p>
-      </div>
-      <ul class="about__list">
-        <li class="about__item">
-          <p class="about__number">1 год</p>
-          <p class="about__text">гарантии на всю продукцию</p>
-        </li>
-        <li class="about__item">
-          <p class="about__number">300+</p>
-          <p class="about__text">выполненных проектов</p>
-        </li>
-        <li class="about__item">
-          <p class="about__number">15 дней</p>
-          <p class="about__text">срок производства</p>
-        </li>
-      </ul>
-    </section>
-    <section class="algorithm" id="algorithm">
-      <h2 class="algorithm__title">Как мы работаем</h2>
-      <p class="algorithm__subtitle">Алгоритм работы с нами для удобства и&nbsp;понимания проекта</p>
-      <ul class="algorithm__list">
-        <li class="algorithm__item">
-          <h3 class="algorithm__item-title">Идея</h3>
-          <p class="algorithm__item-text">Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой
-            референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по
-            материалам.</p>
-        </li>
-        <li class="algorithm__item">
-          <h3 class="algorithm__item-title">Техническое задание</h3>
-          <p class="algorithm__item-text">Вместе с клиентом формулируем корректное ТЗ, которое включает в себя
-            визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации
-            проекта и другие обязательные пункты.</p>
-        </li>
-        <li class="algorithm__item">
-          <h3 class="algorithm__item-title">Коммерческое предложение</h3>
-          <p class="algorithm__item-text">Предпочтительно используем натуральные материалы. Но любую смету можем
-            оптимизировать, упростив материалы или конструктив. Сможем подстроиться под бюджет клиента и согласуем
-            коммерческое предложение</p>
-        </li>
-        <li class="algorithm__item">
-          <h3 class="algorithm__item-title">Подготовка рабочего проекта</h3>
-          <p class="algorithm__item-text">Создадим рабочую документацию и чертежи. Это фундамент качественного
-            производства. На этом этапе утверждаем с клиентом все габариты и материалы, чертежи и приступаем к
-            производству.</p>
-        </li>
-        <li class="algorithm__item">
-          <h3 class="algorithm__item-title">Производство и монтаж</h3>
-          <p class="algorithm__item-text">Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма.
-            Монтажом тоже занимаемся самостоятельно. Ведь мы это сделаем быстро и аккуратно.</p>
-        </li>
-      </ul>
-    </section>
-    <section class="projects" id="projects">
-      <h2 class="projects__title">Проекты</h2>
-      <ul class="projects__list">
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage1.png"
-                                                 alt="Тумба под телевизор"></div>
-          <a class="projects__caption" href="#">
-            <p>Тумба под телевизор</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage2.png"
-                                                 alt="Встроенная кухня"></div>
-          <a class="projects__caption" href="#">
-            <p>Встроенная кухня</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage3.png"
-                                                 alt="Стеллаж для книг"></div>
-          <a class="projects__caption" href="#">
-            <p>Стеллаж для книг</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage4.png"
-                                                 alt="Тумбы для прихожей"></div>
-          <a class="projects__caption" href="#">
-            <p>Тумбы для прихожей</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage5.png" alt="Кровать">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aveji</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body class="custom-scroll">
+    <div class="page">
+      <header class="header"><a href="/"><img class="logo header__logo" src="./img/logo/logo.svg" alt="Логотип"></a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+                  <li><a class="header__link link-hover" href="#about">О нас</a></li>
+                  <li><a class="header__link link-hover" href="#projects">Проекты</a></li>
+                  <li><a class="header__link link-hover" href="#">Материалы</a></li>
+                  <li><a class="header__link link-hover" href="#reviews">Отзывы</a></li>
+          </ul><a class="header__link" href="tel:79999999999">+7 999 999 99 99</a>
+        </nav>
+        <button class="btn btn_menu header__burger" type="button" aria-label="Открыть меню" aria-expanded="false"></button>
+      </header>
+      <main class="content">
+        <section class="intro" id="intro">
+          <h1 class="intro__title">Эксклюзивная и&nbsp;нестандартная мебель для дома</h1>
+          <p class="intro__subtitle">Мы можем произвести любую мебель для вашего проекта и найти производственное решение любой задумки.</p><a class="btn btn_secondary intro__order" href="#feedback">Заказать проект</a><img class="intro__img intro__img_big" src="./img/image1.png" alt="Наша мебель"><img class="intro__img intro__img_small" src="./img/image2.png" alt="Наша мебель">
+        </section>
+        <section class="about" id="about">
+          <h2 class="about__title">Более 5 лет создаем мебель для вашего комфорта</h2>
+          <h2 class="about__title about__title_mobile">О компании</h2>
+          <div class="about__info">
+                    <p class="about__text">Мы — команда профессионалов, которые могут произвести любую мебель для вашего проекта, а также найти производственное решение любой задумки.</p>
+                    <p class="about__text">Наша основная цель — реализовывать самые смелые задумки, и делать это качественно и аккуратно.</p>
+                    <p class="about__text">В качестве материалов мы используем натуральные — стекло, дерево, бетон, камень, металл и эпоксидную смолу.</p>
           </div>
-          <a class="projects__caption" href="#">
-            <p>Кровать</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="projects__item">
-          <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage6.png" alt="Комод"></div>
-          <a class="projects__caption" href="#">
-            <p>Комод</p>
-            <!--include ../../../img/sprites/arrow.svg-->
-            <svg class="projects__svg" data-svg="arrow">
-              <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="swiper projects__swiper">
-        <ul class="swiper-wrapper">
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage1.png"
-                                                   alt="Тумба под телевизор"></div>
-            <a class="projects__caption" href="#">
-              <p>Тумба под телевизор</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage2.png"
-                                                   alt="Встроенная кухня"></div>
-            <a class="projects__caption" href="#">
-              <p>Встроенная кухня</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage3.png"
-                                                   alt="Стеллаж для книг"></div>
-            <a class="projects__caption" href="#">
-              <p>Стеллаж для книг</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage4.png"
-                                                   alt="Тумбы для прихожей"></div>
-            <a class="projects__caption" href="#">
-              <p>Тумбы для прихожей</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage5.png" alt="Кровать">
+          <ul class="about__list">
+                    <li class="about__item">
+                      <p class="about__number">1 год</p>
+                      <p class="about__text">гарантии на всю продукцию</p>
+                    </li>
+                    <li class="about__item">
+                      <p class="about__number">300+</p>
+                      <p class="about__text">выполненных проектов</p>
+                    </li>
+                    <li class="about__item">
+                      <p class="about__number">15 дней</p>
+                      <p class="about__text">срок производства</p>
+                    </li>
+          </ul>
+        </section>
+        <section class="algorithm" id="algorithm">
+          <h2 class="algorithm__title">Как мы работаем</h2>
+          <p class="algorithm__subtitle">Алгоритм работы с нами для удобства и&nbsp;понимания проекта</p>
+          <ul class="algorithm__list">
+                    <li class="algorithm__item">
+                      <h3 class="algorithm__item-title">Идея</h3>
+                      <p class="algorithm__item-text">Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по материалам.</p>
+                    </li>
+                    <li class="algorithm__item">
+                      <h3 class="algorithm__item-title">Техническое задание</h3>
+                      <p class="algorithm__item-text">Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации проекта и другие обязательные пункты.</p>
+                    </li>
+                    <li class="algorithm__item">
+                      <h3 class="algorithm__item-title">Коммерческое предложение</h3>
+                      <p class="algorithm__item-text">Предпочтительно используем натуральные материалы. Но любую смету можем оптимизировать, упростив материалы или конструктив. Сможем подстроиться под бюджет клиента и согласуем коммерческое предложение</p>
+                    </li>
+                    <li class="algorithm__item">
+                      <h3 class="algorithm__item-title">Подготовка рабочего проекта</h3>
+                      <p class="algorithm__item-text">Создадим рабочую документацию и чертежи. Это фундамент качественного производства. На этом этапе утверждаем с клиентом все габариты и материалы, чертежи и приступаем к производству.</p>
+                    </li>
+                    <li class="algorithm__item">
+                      <h3 class="algorithm__item-title">Производство и монтаж</h3>
+                      <p class="algorithm__item-text">Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма. Монтажом тоже занимаемся самостоятельно. Ведь мы это сделаем быстро и аккуратно.</p>
+                    </li>
+          </ul>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="projects__title">Проекты</h2>
+          <ul class="projects__list">
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage1.png" alt="Тумба под телевизор"></div><a class="projects__caption" href="#">
+                        <p>Тумба под телевизор</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage2.png" alt="Встроенная кухня"></div><a class="projects__caption" href="#">
+                        <p>Встроенная кухня</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage3.png" alt="Стеллаж для книг"></div><a class="projects__caption" href="#">
+                        <p>Стеллаж для книг</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage4.png" alt="Тумбы для прихожей"></div><a class="projects__caption" href="#">
+                        <p>Тумбы для прихожей</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage5.png" alt="Кровать"></div><a class="projects__caption" href="#">
+                        <p>Кровать</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+                    <li class="projects__item">
+                      <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage6.png" alt="Комод"></div><a class="projects__caption" href="#">
+                        <p>Комод</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                        <!--+svg('arrow').projects__svg--></a>
+                    </li>
+          </ul>
+          <div class="swiper projects__swiper">
+            <ul class="swiper-wrapper">
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage1.png" alt="Тумба под телевизор"></div><a class="projects__caption" href="#">
+                          <p>Тумба под телевизор</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage2.png" alt="Встроенная кухня"></div><a class="projects__caption" href="#">
+                          <p>Встроенная кухня</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage3.png" alt="Стеллаж для книг"></div><a class="projects__caption" href="#">
+                          <p>Стеллаж для книг</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage4.png" alt="Тумбы для прихожей"></div><a class="projects__caption" href="#">
+                          <p>Тумбы для прихожей</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage5.png" alt="Кровать"></div><a class="projects__caption" href="#">
+                          <p>Кровать</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+                      <li class="projects__item swiper-slide">
+                        <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage6.png" alt="Комод"></div><a class="projects__caption" href="#">
+                          <p>Комод</p><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="11.8684" y1="2.18556e-08" x2="11.8684" y2="12" stroke="white"/>
+<line x1="12" y1="0.5" y2="0.5" stroke="white"/>
+<line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
+</svg>
+
+                          <!--+svg('arrow').projects__svg--></a>
+                      </li>
+            </ul>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list">
+                    <li class="reviews__item"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                      <h4 class="reviews__item-title">Игорь Антонов</h4>
+                      <p class="reviews__item-text">Обратился к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.</p>
+                    </li>
+                    <li class="reviews__item"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                      <h4 class="reviews__item-title">Ольга Иванова</h4>
+                      <p class="reviews__item-text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
+                    </li>
+                    <li class="reviews__item"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                      <h4 class="reviews__item-title">Аркадий Макаров</h4>
+                      <p class="reviews__item-text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
+                    </li>
+          </ul>
+          <div class="swiper reviews__swiper">
+            <ul class="swiper-wrapper swiper-wrapper_bottom">
+                      <li class="reviews__item swiper-slide"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                        <h4 class="reviews__item-title">Игорь Антонов</h4>
+                        <p class="reviews__item-text">Обратился к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.</p>
+                      </li>
+                      <li class="reviews__item swiper-slide"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                        <h4 class="reviews__item-title">Ольга Иванова</h4>
+                        <p class="reviews__item-text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
+                      </li>
+                      <li class="reviews__item swiper-slide"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z" fill="#212529"/>
+</svg>
+
+                        <h4 class="reviews__item-title">Аркадий Макаров</h4>
+                        <p class="reviews__item-text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
+                      </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="feedback" id="feedback"><img class="feedback__img" src="./img/image3.png" alt="Наша мебель">
+          <div class="feedback__wrap">
+            <h2 class="feedback__title">Хотите заказать проект?</h2>
+            <p class="feedback__subtitle">Оставьте заявку, и мы вам перезвоним</p>
+            <p class="feedback__message">Заявка отправлена успешно!</p>
+            <form class="form" name="feedback" novalidate>
+              <div class="form__group">
+                <input class="form__input" id="name-input" required minlength="3" type="text" name="name" autocomplete="off" placeholder="">
+                <label class="form__label" for="name-input">Имя</label><span class="form__input-error name-input-error">Минимум 3 символа</span>
+              </div>
+              <div class="form__group">
+                <input class="form__input" id="email-input" required type="email" name="email" autocomplete="off" placeholder="">
+                <label class="form__label" for="email-input">Email</label><span class="form__input-error email-input-error">Формат: name@mail.ru</span>
+              </div>
+              <div class="form__group">
+                <input class="form__input" id="phone-input" required pattern="^((\+7|7|8)+([0-9]){10})$" minlength="11" type="tel" name="phone" autocomplete="off" placeholder="">
+                <label class="form__label" for="phone-input">Телефон</label><span class="form__input-error phone-input-error">Только цифры, 11 символов</span>
+              </div>
+              <button class="btn btn_primary form__btn">Отправить заявку</button>
+            </form>
+            <div class="feedback__icons"><a href="https://www.apple.com/app-store/" target="_blank"><img class="feedback__icon" src="./img/icon/appStore.svg" alt="Apple Store"></a><a href="https://play.google.com/store/" target="_blank"><img class="feedback__icon" src="./img/icon/googlePlay.svg" alt="Google Play"></a>
             </div>
-            <a class="projects__caption" href="#">
-              <p>Кровать</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="projects__item swiper-slide">
-            <div class="projects__photo-wrap"><img class="projects__photo" src="./img/img-collage6.png" alt="Комод">
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">
+          <p>&copy; 2024 Aveji</p>
+          <p>Все права защищены</p>
+        </div>
+        <ul class="footer__policy">
+                <li><a class="footer__link link-hover" href="./img/files/privacy-policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+          <li class="footer__slash">/</li>
+                <li><a class="footer__link link-hover" href="./img/files/payment-and-delivery.pdf" target="_blank">Оплата и доставка</a></li>
+        </ul>
+        <ul class="footer__social">
+                <li><a class="footer__link link-hover" href="https://vk.com/" target="_blank">Вконтакте</a></li>
+                <li><a class="footer__link link-hover" href="https://web.telegram.org/k/" target="_blank">Телеграм</a></li>
+        </ul>
+      </footer>
+      <div class="menu">
+        <div class="overlay"></div>
+        <div class="menu__container">
+          <div class="menu__content">
+            <div class="menu__header"><a href="/"><img class="logo menu__logo" src="./img/logo/logo.svg" alt="Логотип"></a>
+              <button class="btn btn_menu btn_menu_close" type="button" aria-label="Закрыть меню" aria-expanded="true"></button>
             </div>
-            <a class="projects__caption" href="#">
-              <p>Комод</p>
-              <!--include ../../../img/sprites/arrow.svg-->
-              <svg class="projects__svg" data-svg="arrow">
-                <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <section class="reviews" id="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                fill="#212529"/>
-          </svg>
-
-          <h4 class="reviews__item-title">Игорь Антонов</h4>
-          <p class="reviews__item-text">Обратился к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу.
-            Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем
-            уровне.</p>
-        </li>
-        <li class="reviews__item">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                fill="#212529"/>
-          </svg>
-
-          <h4 class="reviews__item-title">Ольга Иванова</h4>
-          <p class="reviews__item-text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к
-            ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
-        </li>
-        <li class="reviews__item">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                fill="#212529"/>
-          </svg>
-
-          <h4 class="reviews__item-title">Аркадий Макаров</h4>
-          <p class="reviews__item-text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали
-            дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
-        </li>
-      </ul>
-      <div class="swiper reviews__swiper">
-        <ul class="swiper-wrapper swiper-wrapper_bottom">
-          <li class="reviews__item swiper-slide">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                  fill="#212529"/>
-            </svg>
-
-            <h4 class="reviews__item-title">Игорь Антонов</h4>
-            <p class="reviews__item-text">Обратился к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу.
-              Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем
-              уровне.</p>
-          </li>
-          <li class="reviews__item swiper-slide">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                  fill="#212529"/>
-            </svg>
-
-            <h4 class="reviews__item-title">Ольга Иванова</h4>
-            <p class="reviews__item-text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к
-              ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
-          </li>
-          <li class="reviews__item swiper-slide">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                  d="M16.6383 5V17.3183C16.6383 26.825 10.42 33.2683 1.66667 35L0.00833333 31.415C4.06167 29.8867 6.66667 25.3517 6.66667 21.6667H0V5H16.6383ZM40 5V17.3183C40 26.825 33.7533 33.27 25 35L23.34 31.415C27.395 29.8867 30 25.3517 30 21.6667H23.3617V5H40Z"
-                  fill="#212529"/>
-            </svg>
-
-            <h4 class="reviews__item-title">Аркадий Макаров</h4>
-            <p class="reviews__item-text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку,
-              сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое
-              спасибо!</p>
-          </li>
-        </ul>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <section class="feedback" id="feedback"><img class="feedback__img" src="./img/image3.png" alt="Наша мебель">
-      <div class="feedback__wrap">
-        <h2 class="feedback__title">Хотите заказать проект?</h2>
-        <p class="feedback__subtitle">Оставьте заявку, и мы вам перезвоним</p>
-        <p class="feedback__message">Заявка отправлена успешно!</p>
-        <form class="form" name="feedback" novalidate>
-          <div class="form__group">
-            <input class="form__input" id="name-input" required minlength="3" type="text" name="name" autocomplete="off"
-                   placeholder="">
-            <label class="form__label" for="name-input">Имя</label><span class="form__input-error name-input-error">Минимум 3 символа</span>
+            <ul class="menu__list">
+                    <li><a class="menu__link link-hover" href="#about">О нас</a></li>
+                    <li><a class="menu__link link-hover" href="#projects">Проекты</a></li>
+                    <li><a class="menu__link link-hover" href="#">Материалы</a></li>
+                    <li><a class="menu__link link-hover" href="#reviews">Отзывы</a></li>
+            </ul><a class="menu__link" href="tel:79999999999">+7 999 999 99 99</a>
+            <ul class="menu__list">
+                    <li><a class="menu__link menu__link_social link-hover" href="https://vk.com/" target="_blank">Вконтакте</a></li>
+                    <li><a class="menu__link menu__link_social link-hover" href="https://web.telegram.org/k/" target="_blank">Телеграм</a></li>
+            </ul>
           </div>
-          <div class="form__group">
-            <input class="form__input" id="email-input" required type="email" name="email" autocomplete="off"
-                   placeholder="">
-            <label class="form__label" for="email-input">Email</label><span class="form__input-error email-input-error">Формат: name@mail.ru</span>
-          </div>
-          <div class="form__group">
-            <input class="form__input" id="phone-input" required pattern="^((\+7|7|8)+([0-9]){10})$" minlength="11"
-                   type="tel" name="phone" autocomplete="off" placeholder="">
-            <label class="form__label" for="phone-input">Телефон</label><span
-              class="form__input-error phone-input-error">Только цифры, 11 символов</span>
-          </div>
-          <button class="btn btn_primary form__btn">Отправить заявку</button>
-        </form>
-        <div class="feedback__icons"><a href="https://www.apple.com/app-store/" target="_blank"><img
-            class="feedback__icon" src="./img/icon/appStore.svg" alt="Apple Store"></a><a
-            href="https://play.google.com/store/" target="_blank"><img class="feedback__icon"
-                                                                       src="./img/icon/googlePlay.svg"
-                                                                       alt="Google Play"></a>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__copyright">
-      <p>&copy; 2024 Aveji</p>
-      <p>Все права защищены</p>
     </div>
-    <ul class="footer__policy">
-      <li><a class="footer__link link-hover" href="./img/files/privacy-policy.pdf" target="_blank">Политика
-        конфиденциальности</a></li>
-      <li class="footer__slash">/</li>
-      <li><a class="footer__link link-hover" href="./img/files/payment-and-delivery.pdf" target="_blank">Оплата и
-        доставка</a></li>
-    </ul>
-    <ul class="footer__social">
-      <li><a class="footer__link link-hover" href="https://vk.com/" target="_blank">Вконтакте</a></li>
-      <li><a class="footer__link link-hover" href="https://web.telegram.org/k/" target="_blank">Телеграм</a></li>
-    </ul>
-  </footer>
-  <div class="menu">
-    <div class="overlay"></div>
-    <div class="menu__container">
-      <div class="menu__content">
-        <div class="menu__header"><a href="/"><img class="logo menu__logo" src="./img/logo/logo.svg" alt="Логотип"></a>
-          <button class="btn btn_menu btn_menu_close" type="button" aria-label="Закрыть меню"
-                  aria-expanded="true"></button>
-        </div>
-        <ul class="menu__list">
-          <li><a class="menu__link link-hover" href="#about">О нас</a></li>
-          <li><a class="menu__link link-hover" href="#projects">Проекты</a></li>
-          <li><a class="menu__link link-hover" href="#">Материалы</a></li>
-          <li><a class="menu__link link-hover" href="#reviews">Отзывы</a></li>
-        </ul>
-        <a class="menu__link" href="tel:79999999999">+7 999 999 99 99</a>
-        <ul class="menu__list">
-          <li><a class="menu__link menu__link_social link-hover" href="https://vk.com/" target="_blank">Вконтакте</a>
-          </li>
-          <li><a class="menu__link menu__link_social link-hover" href="https://web.telegram.org/k/" target="_blank">Телеграм</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-<script src="js/main.min.js"></script>
+  </body>
+  <script src="js/main.min.js"></script>
 </html>
