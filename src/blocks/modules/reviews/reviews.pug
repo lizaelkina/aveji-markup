@@ -1,6 +1,8 @@
+include ../../../views/helpers/mixins
+
 mixin review(title, text, extraClass)
   li.reviews__item(class!=extraClass)
-    include ../../../img/icon/quotes.svg
+    +svg('quotes').reviews__svg
     h4.reviews__item-title=title
     p.reviews__item-text=text
 

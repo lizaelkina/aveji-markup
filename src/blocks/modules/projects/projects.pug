@@ -1,10 +1,12 @@
+include ../../../views/helpers/mixins
+
 mixin photo(href, src, alt, extraClass)
   li.projects__item(class!=extraClass)
     div.projects__photo-wrap
       img.projects__photo(src=src alt=alt)
     a(href=href).projects__caption
       p= alt
-      include ../../../img/icon/arrow.svg
+      +svg('arrow').projects__svg
 
 section#projects.projects
   h2.projects__title Проекты

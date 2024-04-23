@@ -61,6 +61,11 @@
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
   }
+
+  &__svg {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 @media screen and (max-width: 1024px) {

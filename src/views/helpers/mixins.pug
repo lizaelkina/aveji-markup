@@ -1,3 +1,7 @@
 mixin logo(extraClass)
   a(href='/')
     img.logo(class!=extraClass)(src='./img/logo/logo.svg' alt='Логотип')
+
+mixin svg(name)
+  svg(data-svg=name)&attributes(attributes)
+    use(xlink:href=`/img/sprites/sprite.svg#${name}`)
