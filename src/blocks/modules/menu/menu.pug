@@ -2,7 +2,7 @@ mixin anchor(title, url)
   li
     a.menu__link.link-hover(href=url)= title
 
-mixin link(title, url, extraClass)
+mixin link(title, url)
   li
     a.menu__link.menu__link_social.link-hover(href=url target='_blank')= title
 
@@ -11,7 +11,7 @@ div.menu
   div.menu__container
     div.menu__content
       div.menu__header
-        +logo('menu__logo')
+        +logo.menu__logo
         button.btn.btn_menu.btn_menu_close(type='button' aria-label='Закрыть меню' aria-expanded='true')
       ul.menu__list
         +anchor('О нас', '#about')

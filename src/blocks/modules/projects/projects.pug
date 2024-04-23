@@ -1,7 +1,7 @@
 include ../../../views/helpers/mixins
 
-mixin photo(href, src, alt, extraClass)
-  li.projects__item(class!=extraClass)
+mixin photo(src, href, alt)
+  li.projects__item&attributes(attributes)
     div.projects__photo-wrap
       img.projects__photo(src=src alt=alt)
     a(href=href).projects__caption
@@ -11,20 +11,20 @@ mixin photo(href, src, alt, extraClass)
 section#projects.projects
   h2.projects__title Проекты
   ul.projects__list
-    +photo('#', './img/img-collage1.png', 'Тумба под телевизор')
-    +photo('#','./img/img-collage2.png', 'Встроенная кухня')
-    +photo('#','./img/img-collage3.png', 'Стеллаж для книг')
-    +photo('#','./img/img-collage4.png', 'Тумбы для прихожей')
-    +photo('#','./img/img-collage5.png', 'Кровать')
-    +photo('#','./img/img-collage6.png', 'Комод')
+    +photo('./img/img-collage1.png', '#', 'Тумба под телевизор')
+    +photo('./img/img-collage2.png', '#', 'Встроенная кухня')
+    +photo('./img/img-collage3.png', '#', 'Стеллаж для книг')
+    +photo('./img/img-collage4.png', '#', 'Тумбы для прихожей')
+    +photo('./img/img-collage5.png', '#', 'Кровать')
+    +photo('./img/img-collage6.png', '#', 'Комод')
 
   div.swiper.projects__swiper
     ul.swiper-wrapper
-      +photo('#', './img/img-collage1.png', 'Тумба под телевизор', 'swiper-slide')
-      +photo('#','./img/img-collage2.png', 'Встроенная кухня', 'swiper-slide')
-      +photo('#','./img/img-collage3.png', 'Стеллаж для книг', 'swiper-slide')
-      +photo('#','./img/img-collage4.png', 'Тумбы для прихожей', 'swiper-slide')
-      +photo('#','./img/img-collage5.png', 'Кровать', 'swiper-slide')
-      +photo('#','./img/img-collage6.png', 'Комод', 'swiper-slide')
+      +photo('./img/img-collage1.png', '#', 'Тумба под телевизор').swiper-slide
+      +photo('./img/img-collage2.png', '#', 'Встроенная кухня').swiper-slide
+      +photo('./img/img-collage3.png', '#', 'Стеллаж для книг').swiper-slide
+      +photo('./img/img-collage4.png', '#', 'Тумбы для прихожей').swiper-slide
+      +photo('./img/img-collage5.png', '#', 'Кровать').swiper-slide
+      +photo('./img/img-collage6.png', '#', 'Комод').swiper-slide
     div.swiper-button-prev
     div.swiper-button-next
