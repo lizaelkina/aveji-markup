@@ -28,6 +28,4 @@ buttonCloseMenu.addEventListener('click', closeMenu);
 
 clickForOverlay.addEventListener('click', closeMenu);
 
-anchorMenu.forEach(link => {
-  link.addEventListener('click', () => closeMenu());
-});
+anchorMenu.forEach(link => link.addEventListener('click', () => closeMenu()));

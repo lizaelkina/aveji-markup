@@ -1,8 +1,8 @@
 include ../../../views/helpers/mixins
 
-mixin menu(title, url)
+mixin menu(title, href)
   li
-    a.header__link.link-hover(href=url)= title
+    a.header__link.link-hover(href=href)= title
 
 header.header
   +logo.header__logo

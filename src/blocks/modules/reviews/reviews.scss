@@ -35,9 +35,10 @@
   }
 
   &__item-text {
+    margin-bottom: 10px;
+    min-height: 125px;
     @include section-text;
     text-align: center;
-    min-height: 135px;
   }
 }
 

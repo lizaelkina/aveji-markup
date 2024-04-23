@@ -1,4 +1,4 @@
-mixin icon(src, alt, href)
+mixin icon(src, href, alt)
   a(href=href target='_blank')
     img.feedback__icon(src=src alt=alt)
 
@@ -10,5 +10,5 @@ section#feedback.feedback
     p.feedback__message Заявка отправлена успешно!
     include ../../modules/form/form
     div.feedback__icons
-      +icon('./img/icon/appStore.svg', 'Apple Store', 'https://www.apple.com/app-store/')
-      +icon('./img/icon/googlePlay.svg', 'Google Play', 'https://play.google.com/store/')
+      +icon('./img/icon/appStore.svg', 'https://www.apple.com/app-store/', 'Apple Store')
+      +icon('./img/icon/googlePlay.svg', 'https://play.google.com/store/', 'Google Play')
