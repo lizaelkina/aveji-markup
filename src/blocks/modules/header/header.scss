@@ -16,7 +16,6 @@
   }
 
   &__menu {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -25,7 +24,6 @@
   &__link {
     padding-bottom: 2px;
     @include section-text;
-    text-decoration: none;
   }
 
   &__burger {

@@ -27,15 +27,12 @@
     }
   }
 
-  &__photo-wrap {
+  &__img-wrap {
     overflow: hidden;
   }
 
-  &__photo {
-    display: block;
-    width: 100%;
-    aspect-ratio: 446 / 580;
-    object-fit: cover;
+  &__img {
+    aspect-ratio: 223 / 290;
     transition: transform .5s;
 
     &:hover {
@@ -56,7 +53,6 @@
     background-color: $overlay;
     @include section-text;
     color: $white;
-    text-decoration: none;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;

@@ -2,8 +2,8 @@ include ../../../views/helpers/mixins
 
 mixin photo(src, href, alt)
   li.projects__item&attributes(attributes)
-    div.projects__photo-wrap
-      img.projects__photo(src=src alt=alt)
+    div.projects__img-wrap
+      img.projects__img(src=src alt=alt)
     a(href=href).projects__caption
       p= alt
       +svg('arrow').projects__svg

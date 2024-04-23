@@ -36,7 +36,6 @@
   }
 
   &__list {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -46,7 +45,6 @@
     padding-bottom: 2px;
     @include section-text;
     font-size: 22px;
-    text-decoration: none;
 
     &_social {
       text-transform: uppercase;

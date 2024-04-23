@@ -21,20 +21,17 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    list-style-type: none;
   }
 
   &__social {
     display: flex;
     gap: 35px;
-    list-style-type: none;
     text-transform: uppercase;
   }
 
   &__link {
     padding-bottom: 2px;
     @include section-text;
-    text-decoration: none;
   }
 
   &__slash {
