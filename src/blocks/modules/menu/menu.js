@@ -1,3 +1,4 @@
+const body = document.querySelector('.root');
 const page = document.querySelector('.page');
 const menu = page.querySelector('.menu');
 const clickForOverlay = page.querySelector('.overlay');
@@ -7,11 +8,13 @@ const anchorMenu = menu.querySelectorAll('.menu__link');
 
 function openMenu() {
   menu.classList.add('menu_opened');
+  body.classList.add('root__modal-open');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
 function closeMenu() {
   menu.classList.remove('menu_opened');
+  body.classList.remove('root__modal-open');
   document.removeEventListener('keydown', closeMenuByEsc);
 }
 
